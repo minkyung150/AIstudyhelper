@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Results</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            margin-bottom: 20px; /* 문장 간의 여백 추가 */
+        }
+        .fade-in:nth-child(2) {
+            animation-delay: 3s;
+        }
+        .fade-in:nth-child(3) {
+            animation-delay: 6s;
+        }
+        .fade-in:nth-child(4) {
+            animation-delay: 9s; /* 버튼 애니메이션 딜레이 */
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .large-text {
+            font-size: 3em;
+            font-weight: bold;
+            color: black;
+        }
+        .normal-text {
+            font-size: 1.5em;
+            color: black;
+        }
+        .button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* 버튼 배경색 */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* 링크의 밑줄 제거 */
+        }
+    </style>
+</head>
+<body>
+    <div class="fade-in large-text">김민경님은 필기를 꼼꼼히 정리하며</div>
+    <div class="fade-in large-text">쉬운 문제부터 차근차근 공부하는 취향입니다.</div>
+    <a href="#" class="fade-in button">나와 비슷한 취향인 친구들의 학습자료 확인하기</a>
+</body>
+</html>
